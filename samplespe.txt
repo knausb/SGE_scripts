@@ -1,0 +1,4 @@
+RS2009P1_us8;/raid1/labs/Grunwald_Lab/web_data/pinf_sra/martin2013/ERR299556_1.fastq.gz;/raid1/labs/Grunwald_Lab/web_data/pinf_sra/martin2013/ERR299556_2.fastq.gz
+IN2009T1_us22;/raid1/labs/Grunwald_Lab/web_data/pinf_sra/martin2013/ERR299557_1.fastq.gz;/raid1/labs/Grunwald_Lab/web_data/pinf_sra/martin2013/ERR299557_2.fastq.gz
+BL2009P4_us23;/raid1/labs/Grunwald_Lab/web_data/pinf_sra/martin2013/ERR299558_1.fastq.gz;/raid1/labs/Grunwald_Lab/web_data/pinf_sra/martin2013/ERR299558_2.fastq.gz
+
