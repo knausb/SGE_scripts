@@ -18,8 +18,10 @@ i=$(expr $SGE_TASK_ID - 1)
 #PATH=/raid1/home/bpp/knausb/bin/samtools-0.1.18/bcftools/:$PATH
 
 PATH=~/bin/samtools-1.1:$PATH
+
+echo "Path:"
 echo $PATH
-echo
+echo ""
 
 REF="/home/bpp/knausb/Grunwald_Lab/home/knausb/pinf_bwa/bwaref/pinf_super_contigs.fa"
 
@@ -51,8 +53,7 @@ samtools --version
 #echo $CMD
 # $CMD
 
-#CMD="samtools view -bSu sams/${arr[0]}.sam | samtools sort -n -O bam -T bams/${arr[0]}_samtools_nsort_tmp > bams/${arr[0]}.sorted.bam
-"
+#CMD="samtools view -bSu sams/${arr[0]}.sam | samtools sort -n -O bam -T bams/${arr[0]}_samtools_nsort_tmp > bams/${arr[0]}.sorted.bam"
 
 #CMD="samtools fixmate bams/${arr[0]}.sorted.bam bams/${arr[0]}.fmsorted.bam"
 CMD="samtools sort -O bam -T bams/${arr[0]}_samtools_csort_tmp -o bams/${arr[0]}.csorted.bam bams/${arr[0]}.fmsorted.bam"
