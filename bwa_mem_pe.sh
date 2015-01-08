@@ -47,7 +47,8 @@ echo $CMD
 eval $CMD
 
 
-CMD="samtools sort -O bam -T bams/${arr[0]}_samtools_csort_tmp bams/${arr[0]}.fmsorted.bam > bams/${arr[0]}_csort.bam"
+CMD="samtools sort -O bam -T bams/${arr[0]}_samtools_csort_tmp -o bams/${arr[0]}_csort.bam bams/${arr[0]}.fmsorted.bam"
+#CMD="samtools sort -O bam -T bams/${arr[0]}_samtools_csort_tmp bams/${arr[0]}.fmsorted.bam > bams/${arr[0]}_csort.bam"
 echo $CMD
 eval $CMD
 
