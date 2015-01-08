@@ -56,7 +56,8 @@ samtools --version
 #CMD="samtools view -bSu sams/${arr[0]}.sam | samtools sort -n -O bam -T bams/${arr[0]}_samtools_nsort_tmp > bams/${arr[0]}.sorted.bam"
 
 #CMD="samtools fixmate bams/${arr[0]}.sorted.bam bams/${arr[0]}.fmsorted.bam"
-CMD="samtools sort -O bam -T bams/${arr[0]}_samtools_csort_tmp -o bams/${arr[0]}.csorted.bam bams/${arr[0]}.fmsorted.bam"
+#CMD="samtools sort -O bam -T bams/${arr[0]}_samtools_csort_tmp -o bams/${arr[0]}.csorted.bam bams/${arr[0]}.fmsorted.bam"
+CMD="samtools view -bSu sams/${arr[0]}.sam | samtools sort -n -O bam -T bams/${arr[0]}_samtools_nsort_tmp | samtools fixmate /dev/stdin bams/${arr[0]}.fmsorted.bam | samtools sort -O bam -T bams/${arr[0]}_samtools_csort_tmp > bams/${arr[0]}_csort.bam"
 
 #| samtools sort -o - bams/${arr[0]}_samtools_csort_tmp > bams/${arr[0]}.bam"
 echo $CMD
